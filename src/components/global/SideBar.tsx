@@ -16,12 +16,15 @@ import { useEffect } from "react";
 import UpdateCurrencys from "./updates/UpdateCurrencys";
 import UpdateDashboard from "./updates/UpdateDashboard";
 import UpdateTradings from "./updates/UpdateTradings";
+import { useSession } from "next-auth/react";
 
 const SideBar = () => {
 
   const { isCollapsed, toggleSideBar } = useBarActions()
   const { lg } = useMediaQueryAdapted()
   const { mode } = useThemeMode()
+  const { toggleModalSignIn } = useBarActions()
+  const { data: session } = useSession()
   const router = useRouter()
   const pathname = usePathname()
 
@@ -41,6 +44,10 @@ const SideBar = () => {
   ]
 
   const handleToggleSideBar = (href: string) => {
+    if (!session?.user?.email) {
+      toggleModalSignIn()
+      return
+    }
     lg && toggleSideBar()
     router.push(href)
   }
