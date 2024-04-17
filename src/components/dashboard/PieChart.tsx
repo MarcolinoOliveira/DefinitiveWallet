@@ -132,8 +132,6 @@ const PieChart = () => {
     <Box
       width='100%'
       height='auto'
-      border='2px solid'
-      borderColor={colors.grey[500]}
       borderRadius={3}
       bgcolor={colors.grey[900]}
       pt={2}

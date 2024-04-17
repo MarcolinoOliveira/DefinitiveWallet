@@ -18,8 +18,7 @@ const LastTradings = () => {
   const lastFiveTraders = orderByDataTrader.slice(0, 5)
 
   return (
-    <Box p={2} width='100%' height='auto' border='2px solid'
-      borderColor={colors.grey[500]} borderRadius={3} bgcolor={colors.grey[900]}>
+    <Box p={2} width='100%' height='auto' borderRadius={3} bgcolor={colors.grey[900]}>
       <Grid container spacing={1.5} direction='column'>
         <Grid item>
           <Box display='flex' justifyContent='space-between' alignItems='center' mb={1}>

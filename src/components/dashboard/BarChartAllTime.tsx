@@ -178,8 +178,6 @@ const BarChartAllTime = () => {
     <Box
       pt={2}
       bgcolor={colors.grey[900]}
-      border='2px solid'
-      borderColor={colors.grey[500]}
       borderRadius={3}
     >
       <ApexCharts options={options} series={series} type='bar' height={height} />

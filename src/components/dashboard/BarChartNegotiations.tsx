@@ -183,9 +183,7 @@ const BarChartNegotiations = () => {
     <Box
       pt={2}
       bgcolor={colors.grey[900]}
-      border='2px solid'
       borderRadius={3}
-      borderColor={colors.grey[500]}
     >
       <ApexCharts options={options} series={series} type='bar' height={height} />
     </Box>

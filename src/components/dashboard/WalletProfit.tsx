@@ -38,9 +38,7 @@ const WalletProfit = () => {
     width: '100%',
     backgroundColor: colors.grey[900],
     padding: '30px 15px 30px 20px',
-    border: '2px solid',
     borderRadius: '12px',
-    borderColor: colors.grey[500],
     height: 'auto',
   }))
 

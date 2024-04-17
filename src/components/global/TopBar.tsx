@@ -127,17 +127,17 @@ const TopBar = () => {
             <Typography>{session?.user?.name}</Typography>
           </Box>}
         {isAuthenticated && <Divider />}
-        {lg && mode === 'dark' &&
+        {lg && mode === 'dark' && isAuthenticated &&
           <MenuItem onClick={toggleTheme}>
             <DarkModeOutlinedIcon sx={{ mr: 1 }} /> Dark Mode
           </MenuItem>
         }
-        {lg && mode === 'light' &&
+        {lg && mode === 'light' && isAuthenticated &&
           <MenuItem onClick={toggleTheme}>
             <LightModeOutlinedIcon sx={{ mr: 1 }} /> Ligth Mode
           </MenuItem>
         }
-        {lg &&
+        {lg && isAuthenticated &&
           <MenuItem>
             <NotificationsNoneIcon sx={{ mr: 1 }} /> Notifications
           </MenuItem>

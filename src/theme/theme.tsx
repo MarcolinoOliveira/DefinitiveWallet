@@ -20,7 +20,7 @@ export const tokens = (mode: PaletteMode) => ({
         600: "#525252",
         700: "#3d3d3d",
         800: "#292929",
-        900: "#202B40",
+        900: "#0D0D0D",
       },
       primary: {
         100: "#d0d1d5",
@@ -78,7 +78,7 @@ export const tokens = (mode: PaletteMode) => ({
         900: "#2e3033"
       },
       darkblue: {
-        500: "#030712",
+        500: "#000000",
       },
       violet: {
         500: "#2962ff"
@@ -97,7 +97,7 @@ export const tokens = (mode: PaletteMode) => ({
         600: "#858585",
         700: "#a3a3a3",
         800: "#c2c2c2",
-        900: "#ffffff",
+        900: "#E9EEF5",
       },
       primary: {
         100: "#040509",
@@ -155,7 +155,7 @@ export const tokens = (mode: PaletteMode) => ({
         900: "#2e3033"
       },
       darkblue: {
-        500: "#E9EEF5"
+        500: "#ffffff"
       },
       violet: {
         500: "#2962ff"
